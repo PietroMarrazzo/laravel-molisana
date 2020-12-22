@@ -14,3 +14,13 @@ img {
   margin: 0 auto;
   padding: 0 16px;
 }
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+}
+.cards .card {
+  flex-basis: 30%;
+  margin: 0px 10px 30px;
+}

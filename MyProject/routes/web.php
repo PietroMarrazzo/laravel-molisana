@@ -129,9 +129,26 @@ $data = [
     ],
 ];
 
+
+    $lunghe = [];
+    $corte = [];
+    $lunghissime = [];
+
+    foreach ($data as $card) {
+        if($card['tipo'] == 'lunga') {
+            $lunghe[] = $card;
+        }
+        elseif($card['tipo'] == 'corta'){
+            $corte[] = $card;
+        }
+        else {
+            $cortissime[] = $card;
+        }
+    }
+
 // dd($data);
 
-    return view('home', ['user' => 'Pietro'], ['cards' => $data]);
+    return view('home', ['user' => 'Pietro'], ['lunghe' => $lunghe, 'corte' => $corte, 'cortissime' => $cortissime]);
 });
 
 Route::get('/news', function () {

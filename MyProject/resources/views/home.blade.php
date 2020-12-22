@@ -9,18 +9,22 @@
 
 {{-- section products --}}
 
-<section>
-    <ul>
+
+
+
+{{-- <section class="container">
+    <ul class="cards">
         @foreach ($cards as $card)
-            <li>
+            <li class="card">
                 <a href="">
                     <img src="{{ $card['src'] }}" alt="product img">
-                    <h3>Vedi prodotto</h3>
+                    <h3>{{ $card['titolo'] }}</h3>
+                    <h4>Vedi prodotto</h4>
                 </a>                
             </li>   
         @endforeach
     </ul>
-</section>
+</section> --}}
 
 
 @endsection
