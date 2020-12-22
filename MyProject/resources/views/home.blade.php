@@ -8,10 +8,19 @@
 
 
 {{-- section products --}}
-<ul>
-    <li>
 
-    </li>
-</ul>
+<section>
+    <ul>
+        @foreach ($cards as $card)
+            <li>
+                <a href="">
+                    <img src="{{ $card['src'] }}" alt="product img">
+                    <h3>Vedi prodotto</h3>
+                </a>                
+            </li>   
+        @endforeach
+    </ul>
+</section>
+
 
 @endsection

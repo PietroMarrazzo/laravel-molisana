@@ -15,6 +15,13 @@
         {{-- HEADER INCLUDE --}}
         @include('partials.header')
 
+
+        {{-- side bar --}}
+        <aside>
+            <h3>Blog</h3>
+            <h3>Why me?</h3>
+        </aside>
+
         <main>
             {{-- content main --}}
             @yield('content')
