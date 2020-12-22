@@ -1,28 +1,17 @@
-<!DOCTYPE html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        {{-- <link rel="stylesheet" href="{{ asset(css/app.css) }}"> --}}
-        <title>Molisana</title>
+@extends('layouts.main')
 
-        <!-- Fonts -->
-        <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
+@section('content')
 
-    </head>
-    <body>
-        <header>
-            <a href="{{ asset('img/logo.png') }}"></a>
-        </header>
+<h1>HOMEPAGE</h1>
 
-        <main>
-            <h1>HOMEPAGE</h1>
+<h3>Benvenuto {{ $user }}</h3>
 
-            <h3>Benvenuto {{ $user }}</h3>
-        </main>
 
-        <footer>
-            <h2>Site La Molisana - Pietro Marrazzo</h2>
-        </footer>
-    </body>
-</html>
+{{-- section products --}}
+<ul>
+    <li>
+
+    </li>
+</ul>
+
+@endsection

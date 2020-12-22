@@ -17,3 +17,8 @@ Route::get('/', function () {
 
     return view('home', ['user' => 'Pietro']);
 });
+
+Route::get('/news', function () {
+    
+    return view('news');
+});
